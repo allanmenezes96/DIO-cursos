@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Tudo Rádio" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Rádio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <h2 class="header-default">
+            <div style="float:left"> Viradouro </div>
+            <form id="sistemadebuscaguia" action="/dials/busca" method="post" style="float:right; margin-top:-15px">
+                <input type="radio" name="RadioGroup1" value="cidade" id="RadioGroup1_1" checked="checked" style="display:none">
+                <label style="float:left;">
+                <input type="" name="textobusca" value="Busque por outra cidade." id="textobusca" style="width: 180px; font-size: 12px" onblur="this.value=this.value==''?'Escolha acima e digite aqui.':this.value;" onfocus="this.value='';">
+                </label>
+                <input type="image" src="/img/layout/bt-buscar.jpg" id="btenvia">
+                </form>
+            </h2>
+            <div id="infos">
+                <div id="populacao">
+                    <strong>Distâncias:</strong>
+                    <p>
+                        <strong>São Paulo (381km)</strong>
+                        <br>
+                        "Ribeirão Preto (68km)"
+                        <br>
+                        "Barretos (66km)"
+                        <br>
+                        "Bebedouro (24km)"
+                        <br>
+                        "Jaboticabal (61km)"
+                        <br>
+                        "Franca (129km)"
+                        <br>
+                        "São José do Rio Preto (140km)"
+                        <br>
+                    </p>
+                </div>
+                <div id="populacao" ><strong>População: </strong>19.017</div>
+            </div>
+        <div id="dial-panel">
+            <div id="select-band"></div>
+            <div id="fm">
+                <table width="800" border="0" cellspacing="0" cellpadding="10">
+                    <tbody>
+                        <tr>
+                            <th width="74" scope="col">ESTAÇÃO</th>
+                            <th width="67" scope="col">SINAL</th>
+                            <th width="54" scope="col">RDS</th>
+                            <th width="162" scope="col">EMISSORA</th>
+                            <th width="130" scope="col">LOCAL DE TRANSM.</th>
+                            <th width="67" scope="col">POTÊNCIA ERP</th>
+                            <th width="67" scope="col">MAIS INFS.</th>
+                            <br>
+                        </tr>
+                            
+                        <tr class="par" background="#fff">
+                            <td width="74" style="text-align:center">88.3</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalexcelente.png" alt="Sinal Excelente"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsnao.png" alt="Não possui RDS / Informação inexistente"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px"> RB FM</td>
+                            <td width="130" style="font-size: 11px">Bebedouro</td>
+                            <td width="54" style="text-align:left; padding left: 10px">1.28kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-0">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>RB FM</h3>
+                                    <div class="item">Classe / Indicativo: B2 (Migrante AM-FM)</div>
+                                    <div class="item">Altitude: 607 metros</div>
+                                    <div class="item">Altura da Torre: 36,6 m</div>
+                                    <div class="item">Nº de radiais / Elementos: s/d</div>
+                                    <div class="item">Alcance Médio: </div>
+                                    <div class="item">Transmissor: MAG FM 1000</div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="impar">
+                            <td width="74" style="text-align:center">88.5</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalbom.png" alt="Sinal Bom"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsnao.png" alt="Não possui RDS / Informação inexistente"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Anhanguera FM</td>
+                            <td width="130" style="font-size: 11px">Morro Agudo</td>
+                            <td width="54" style="text-align:left; padding left: 10px">0.15kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-1">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Anhanguera FM</h3>
+                                    <div class="item">Classe / Indicativo: C</div>
+                                    <div class="item">Altitude: 646m</div>
+                                    <div class="item">Altura da Torre: 33m</div>
+                                    <div class="item">Nº de radiais / Elementos: 2</div>
+                                    <div class="item">Alcance Médio: </div>
+                                    <div class="item">Transmissor: </div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="par">
+                            <td width="74" style="text-align:center">88.7</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalrazoavel.png" alt="Sinal Razoável"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsok.png" alt="Possui RDS"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px"> Rádio Jornal</td>
+                            <td width="130" style="font-size: 11px">Barretos</td>
+                            <td width="54" style="text-align:left; padding left: 10px">0.75kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-2">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Rádio Jornal</h3>
+                                    <div class="item">Classe / Indicativo: B2 (Migrante AM/FM)</div>
+                                    <div class="item">Altitude: 566m</div>
+                                    <div class="item">Altura da Torre: 71,4m</div>
+                                    <div class="item">Nº de radiais / Elementos: 4</div>
+                                    <div class="item">Alcance Médio: </div>
+                                    <div class="item">Transmissor: MAG FM 1000</div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="impar">
+                            <td width="74" style="text-align:center">88.7</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalpessimo.png" alt="Sinal Péssimo"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsok.png" alt="Possui RDS"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Band FM</td>
+                            <td width="130" style="font-size: 11px">Barrinha</td>
+                            <td width="54" style="text-align:left; padding left: 10px">0.53kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-3">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Band FM</h3>
+                                    <div class="item">Classe / Indicativo: C / ZYW768</div>
+                                    <div class="item">Altitude: 540m</div>
+                                    <div class="item">Altura da Torre: 30,5m</div>
+                                    <div class="item">Nº de radiais / Elementos: 2</div>
+                                    <div class="item">Alcance Médio: </div>
+                                    <div class="item">Transmissor: MAG FM 1000</div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="par">
+                            <td width="74" style="text-align:center">88.9</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalexcelente.png" alt="Sinal Excelente"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsnao.png" alt=" Não possui RDS / Informação não disponível"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Você FM</td>
+                            <td width="130" style="font-size: 11px">Viradouro</td>
+                            <td width="54" style="text-align:left; padding left: 10px">0.07kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-4">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Você FM</h3>
+                                    <div class="item">Classe / Indicativo: C</div>
+                                    <div class="item">Altitude: 580m</div>
+                                    <div class="item">Altura da Torre: 87,5m</div>
+                                    <div class="item">Nº de radiais / Elementos: 2</div>
+                                    <div class="item">Alcance Médio: 25km</div>
+                                    <div class="item">Transmissor: MAG FM 1000</div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="impar">
+                            <td width="74" style="text-align:center">89.1</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalexcelente.png" alt="Sinal Excelente"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsnao.png" alt="Não possui RDS / Informação não disponível"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Ótima FM</td>
+                            <td width="130" style="font-size: 11px">Brodowski</td>
+                            <td width="54" style="text-align:left; padding left: 10px">27.8kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-5">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Ótima FM</h3>
+                                    <div class="item">Classe / Indicativo: A4 / ZYU889</div>
+                                    <div class="item">Altitude: 860m</div>
+                                    <div class="item">Altura da Torre: 85m</div>
+                                    <div class="item">Nº de radiais / Elementos: 6</div>
+                                    <div class="item">Alcance Médio: 80km</div>
+                                    <div class="item">Transmissor: MAG FM 12,5a</div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="par">
+                            <td width="74" style="text-align:center">89.3</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalrazoavel.png" alt="Sinal Razoável"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsnao.png" alt="Não possui RDS / Informação não disponível"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Massa FM</td>
+                            <td width="130" style="font-size: 11px">Taquaritinga</td>
+                            <td width="54" style="text-align:left; padding left: 10px">25.6kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-6">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Massa FM</h3>
+                                    <div class="item">Classe / Indicativo: A1 / ZYD985</div>
+                                    <div class="item">Altitude: 721m</div>
+                                    <div class="item">Altura da Torre: 90m</div>
+                                    <div class="item">Nº de radiais / Elementos: 6</div>
+                                    <div class="item">Alcance Médio: 90km</div>
+                                    <div class="item">Transmissor: Auad Correa - SP12000 Ágile</div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="impar">
+                            <td width="74" style="text-align:center">89.5</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalexcelente.png" alt="Sinal Excelente"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsok.png" alt="Possui RDS"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Lidersom FM</td>
+                            <td width="130" style="font-size: 11px">Orlândia</td>
+                            <td width="54" style="text-align:left; padding left: 10px">23.9kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-7">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Lidersom FM</h3>
+                                    <div class="item">Classe / Indicativo: A1 / ZYD870</div>
+                                    <div class="item">Altitude: 800m</div>
+                                    <div class="item">Altura da Torre: 69m</div>
+                                    <div class="item">Nº de radiais / Elementos: 6</div>
+                                    <div class="item">Alcance Médio: 80km</div>
+                                    <div class="item">Transmissor: </div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="par">
+                            <td width="74" style="text-align:center">90.1</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalpessimo.png" alt="Sinal Péssimo"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsok.png" alt="Não possui RDS / Informação não disponível"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Cultura FM</td>
+                            <td width="130" style="font-size: 11px">Guaíra</td>
+                            <td width="54" style="text-align:left; padding left: 10px">16.4kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-8">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Cultura FM</h3>
+                                    <div class="item">Classe / Indicativo: A4 / ZYM670</div>
+                                    <div class="item">Altitude: 530m</div>
+                                    <div class="item">Altura da Torre: 50m</div>
+                                    <div class="item">Nº de radiais / Elementos: 4</div>
+                                    <div class="item">Alcance Médio: 40km</div>
+                                    <div class="item">Transmissor: </div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                    
+                        </tr>
+                        <tr class="impar">
+                            <td width="74" style="text-align:center">90.5</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalexcelente.png" alt="Sinal Excelente"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsok.png" alt="Possui RDS"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">CBN</td>
+                            <td width="130" style="font-size: 11px">Ribeirão Preto</td>
+                            <td width="54" style="text-align:left; padding left: 10px">95.5kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                            <tr id="detalhesfm-9">
+                                <td colspan="8">
+                                    <div class="maisdetalhes">
+                                        <div class="imgradio"> <img src="#"></div>
+                                        <h3>CBN</h3>
+                                        <div class="item">Classe / Indicativo: E3 / ZYD813</div>
+                                        <div class="item">Altitude: 701,3m</div>
+                                        <div class="item">Altura da Torre: 100,5m</div>
+                                        <div class="item">Nº de radiais / Elementos: 6</div>
+                                        <div class="item">Alcance Médio: 130km</div>
+                                        <div class="item">Transmissor: Gates Air Inc. FAX 40k</div>
+                                        <div class="item">Processador de áudio: </div>
+                                    </div>
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                        </tr>
+                        <tr class="par">
+                            <td width="74" style="text-align:center">91.1</td>
+                            <td width="67" style="text-align:center"> <img src="media/sinalpessimo.png" alt="Sinal Péssimo"> </td>
+                            <td width="54" style="text-align:center"> <img src="media/rdsok.png" alt="Possui RDS"> </td>
+                            <td width="152" style="text-align:left; padding left: 10px">Estúdio 1 FM</td>
+                            <td width="130" style="font-size: 11px">Cristais Paulista</td>
+                            <td width="54" style="text-align:left; padding left: 10px">4.47kW</td>
+                            <td width="94" id="td-0" class="dettd" style="padding: 0px"> <a href="javascript:mostraDetalhe(0);" id="a-0" class="detalhes"> Clique aqui </a> </td>
+                        </tr>
+                        <tr id="detalhesfm-10">
+                            <td colspan="8">
+                                <div class="maisdetalhes">
+                                    <div class="imgradio"> <img src="#"></div>
+                                    <h3>Estúdio 1 FM</h3>
+                                    <div class="item">Classe / Indicativo: A3 / ZYW626</div>
+                                    <div class="item">Altitude: 1015m</div>
+                                    <div class="item">Altura da Torre: 67m</div>
+                                    <div class="item">Nº de radiais / Elementos: 4</div>
+                                    <div class="item">Alcance Médio: 60km</div>
+                                    <div class="item">Transmissor: MTA FM 10000S</div>
+                                    <div class="item">Processador de áudio: </div>
+                                </div>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+    </footer>
+    
+    
+</body>
+</html>
